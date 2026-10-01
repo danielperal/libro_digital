@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Indica la codificación para mostrar correctamente caracteres como á, é o ñ -->
+    <meta charset="UTF-8">
+
+    <!-- Define el título que aparece en la pestaña del navegador -->
+    <title>HTML y la WWW</title>
+</head>
+
+<body>
+
+    <!-- Encabezado principal de la página -->
+    <h1>HTML y la WWW</h1>
+
+    <!--
+        La etiqueta <abbr> representa una abreviatura o unas siglas.
+        El atributo title contiene su significado completo.
+    -->
+    <p>
+        El <abbr title="HyperText Markup Language">HTML</abbr> es el
+        <strong>lenguaje de marcas</strong> utilizado para crear y organizar
+        el contenido de las páginas que forman la
+        <abbr title="World Wide Web">WWW</abbr>.
+    </p>
+
+    <!-- Encabezado de segundo nivel -->
+    <h2>Funcionamiento de HTML</h2>
+
+    <!-- Dentro del párrafo se anidan etiquetas de formato de texto -->
+    <p>
+        Gracias a <b>HTML</b>, los navegadores pueden interpretar y mostrar
+        el contenido de forma estructurada, combinando textos, imágenes,
+        hipervínculos y otros elementos <i>multimedia</i>.
+    </p>
+
+    <h2>Origen de la WWW</h2>
+
+    <p>
+        La <abbr title="World Wide Web">WWW</abbr> fue desarrollada por
+        <u>Tim Berners-Lee</u>, quien también creó la primera versión de
+        <abbr title="HyperText Markup Language">HTML</abbr>.
+    </p>
+
+    <!--
+        <blockquote> contiene una cita extensa o un texto
+        procedente de otra fuente. Los navegadores suelen mostrar su contenido con una sangría,
+        pero no debe utilizarse simplemente para desplazar o centrar texto.
+    -->
+   <p>Tim Berners-Lee explicó:</p>
+
+    <blockquote>
+    La Web es más una creación social que técnica.
+    </blockquote>
+
+    <h2>Comunicación en la web</h2>
+
+    <p>
+        Para acceder a una página web se utiliza normalmente el protocolo
+        <abbr title="HyperText Transfer Protocol">HTTP</abbr>
+        o su versión segura,
+        <abbr title="HyperText Transfer Protocol Secure">HTTPS</abbr>.
+        Estos protocolos permiten la comunicación entre el navegador
+        y el servidor donde se encuentra alojada la página.
+    </p>
+
+    <!--
+        El enlace está anidado dentro del párrafo porque forma parte de la frase.
+        href indica la dirección de destino.
+        target="_blank" abre el enlace en una pestaña nueva.
+        title muestra información al situar el cursor sobre el enlace.
+    -->
+    <p>
+        Puedes encontrar más información en la
+        <a href="https://www.w3.org/"
+           target="_blank"
+           title="Visitar la página del W3C">
+            página del W3C
+        </a>.
+    </p>
+
+</body>
+
+</html>
