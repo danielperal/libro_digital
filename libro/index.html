@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Introducción al desarrollo web</title>
+</head>
+<body>
+
+    <!-- 3.1 Título principal: aparece ANTES de la tabla -->
+    <h1>Introducción al desarrollo web</h1>
+
+    <!-- 3.2 Inicio de la tabla (4 columnas: Portada, Capítulo, Título o apartado, Páginas) -->
+    <table border="1">
+
+        <!-- 3.3 Título de la tabla: va justo después de abrir <table> -->
+        <caption>Tabla de contenido del libro</caption>
+
+        <!-- 3.4 Encabezado de la tabla (dos filas) -->
+        <thead>
+            <!-- Primera fila: una sola celda que ocupa las 4 columnas (colspan="4") -->
+            <tr>
+                <th colspan="4">Contenido del libro</th>
+            </tr>
+            <!-- Segunda fila: los cuatro títulos de columna -->
+            <tr>
+                <th>Portada</th>
+                <th>Capítulo</th>
+                <th>Título o apartado</th>
+                <th>Páginas</th>
+            </tr>
+        </thead>
+
+        <!-- 4. Cuerpo de la tabla: 3 capítulos distribuidos en 6 filas -->
+        <tbody>
+
+            <!-- FILA 1: Capítulo 1 - Introducción - Páginas 1-5 -->
+            <tr>
+                <!-- 5. Portada: aparece una sola vez y ocupa las 6 filas del cuerpo (rowspan="6").
+                     Ruta relativa: la carpeta imagenes está al mismo nivel que index.html -->
+                <td rowspan="6">
+                    <img src="imagenes/portada.png" alt="Portada del libro Introducción al desarrollo web" width="150">
+                </td>
+                <!-- 6 y 7. Número del capítulo 1: ocupa 2 filas (rowspan="2") y es un enlace
+                     al capítulo 1 mediante una ruta relativa -->
+                <td rowspan="2"><a href="capitulo1/capitulo1.html">1</a></td>
+                <td>Introducción</td>
+                <td>1-5</td>
+            </tr>
+
+            <!-- FILA 2: Capítulo 1 - Primeros pasos - Páginas 6-12 -->
+            <!-- No se repite la celda de la portada ni la del número del capítulo,
+                 porque los rowspan de la fila anterior ya las ocupan -->
+            <tr>
+                <td>Primeros pasos</td>
+                <td>6-12</td>
+            </tr>
+
+            <!-- FILA 3: Capítulo 2 - Conceptos básicos - Páginas 13-20 -->
+            <tr>
+                <!-- Número del capítulo 2: ocupa 3 filas (rowspan="3") y es un enlace
+                     al capítulo 2 mediante una ruta relativa -->
+                <td rowspan="3"><a href="capitulo2/capitulo2.html">2</a></td>
+                <td>Conceptos básicos</td>
+                <td>13-20</td>
+            </tr>
+
+            <!-- FILA 4: Capítulo 2 - Contenido avanzado - Páginas 21-35 -->
+            <!-- No se repite la celda del número del capítulo 2 -->
+            <tr>
+                <td>Contenido avanzado</td>
+                <td>21-35</td>
+            </tr>
+
+            <!-- FILA 5: Capítulo 2 - Ejemplos prácticos - Páginas 36-45 -->
+            <!-- No se repite la celda del número del capítulo 2 -->
+            <tr>
+                <td>Ejemplos prácticos</td>
+                <td>36-45</td>
+            </tr>
+
+            <!-- FILA 6: Capítulo 3 - Conclusiones - Páginas 46-50 -->
+            <tr>
+                <!-- Capítulo 3: un solo apartado, celda normal (sin rowspan) con enlace
+                     al capítulo 3 mediante una ruta relativa -->
+                <td><a href="capitulo3/capitulo3.html">3</a></td>
+                <td>Conclusiones</td>
+                <td>46-50</td>
+            </tr>
+
+        </tbody>
+
+        <!-- 8. Pie de la tabla: una fila con una celda que ocupa las 4 columnas -->
+        <tfoot>
+            <tr>
+                <td colspan="4">Fin de la tabla de contenido</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+</body>
+</html>
